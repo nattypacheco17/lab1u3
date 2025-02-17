@@ -1,0 +1,20 @@
+<div class="container">
+  <div class="formulario-calculadora">
+    <div class="form-group">
+      <label>Primer Número</label>
+      <input type="number" value="" class="form-control" placeholder="Digíte el primer número" [(ngModel)]="operandoA"
+        id="operandoA">
+    </div>
+    <div class="form-group">
+      <label>Segundo Número</label>
+      <input type="number" value="" class="form-control" placeholder="Digíte el segundo número" [(ngModel)]="operandoB"
+        id="operandoB">
+    </div>
+    <button type="submit" class="btn btn-primary" (click)="onSumar()" id="sumarButton">Sumar </button>
+    <button type="submit" class="btn btn-info" (click)="onMultiplicar()" id="botonMultiplicar">Multiplicar</button>
+    <button type="submit" class="btn btn-primary" (click)="onDividir()" id="botonDividir">Dividir</button>
+  </div>
+</div>
+<p id="resultado">La suma es: {{resultado}}</p>
+<p id="resultado2">La multplicació es: {{resultadoMultiplicar}}</p>
+<p id="resultado3">La división es: {{resultadoDividir}}</p>
